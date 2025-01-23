@@ -13,7 +13,7 @@ function exibirTextoNaTela(tag, texto) {
 // chama essa funcao quando clica no botão novo jogo
 function textoInicial() {
     exibirTextoNaTela('h1', 'numero secreto');
-    exibirTextoNaTela('p', 'Digite um numero entre 1 e 10');   
+    exibirTextoNaTela('p', 'Digite um numero entre 1 e 100');   
 }
 textoInicial();
 // função que verifica o chute e exibe na tela se a pessoa acertou ou nao
@@ -59,9 +59,10 @@ function limparChute() {
 function reiniciarJogo(params) {
     let numeroSecreto = criarNumeroAleatorio();
     limparChute();
-    let numeroLimite = 10;
-    let tentativas = 1;
     textoInicial();
     document.getElementById('reiniciar').setAttribute('disabled',true);
+    let tentativas = 1;
 
 }
+
+print('ola mundo')
